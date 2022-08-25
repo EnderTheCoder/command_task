@@ -16,7 +16,7 @@ public class TaskExecutor extends BukkitRunnable {
         Date current = new Date(System.currentTimeMillis());
         List<Date> removeList = new ArrayList<>();
         for (Date date : tasks.keySet()) {
-            if (date.getYear() == current.getYear() && date.getMonth() == current.getMonth() && date.getDay() == current.getDay()) {
+            if (date.getMonth() == current.getMonth() && date.getDay() == current.getDay()) {
                 removeList.add(date);
                 Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), tasks.get(date));
             }

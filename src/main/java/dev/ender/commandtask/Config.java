@@ -20,7 +20,7 @@ public class Config {
         ConfigurationSection tasks = CONFIG.getConfigurationSection("tasks");
         ConcurrentHashMap<Date, String> map = new ConcurrentHashMap<>();
         for (String date : tasks.getKeys(false)) {
-            String rDate = date.replace("t", "");
+            String rDate = "2022-" + date;
             String taskCommand = tasks.getString(date);
             Date taskDate = format.parse(rDate);
             if (taskDate != null) {

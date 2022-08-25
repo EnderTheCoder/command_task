@@ -1,4 +1,4 @@
 tasks:
-  # 格式：tyyyy-mm-dd: "command"
-  t2022-08-25: "say hello"
-  t2022-08-26: "say hello"
+  # 格式：mm-dd: "command"
+  08-25: "say hello"
+  08-26: "say hello"

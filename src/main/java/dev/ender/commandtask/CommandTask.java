@@ -20,7 +20,7 @@ public final class CommandTask extends JavaPlugin {
             e.printStackTrace();
             Bukkit.getPluginManager().disablePlugin(this);
         }
-        new TaskExecutor().runTaskTimerAsynchronously(this, 0, 10000);
+        new TaskExecutor().runTaskTimerAsynchronously(this, 20 * 60 * 5, 10000);
         Bukkit.getLogger().info(ChatColor.AQUA +
                 " \n" +
                 "/$$$$$$$$                 /$$                     /$$$$$$$                      \n" +

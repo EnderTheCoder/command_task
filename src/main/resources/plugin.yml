@@ -1,0 +1,5 @@
+name: commandtask
+version: '${project.version}'
+main: dev.ender.commandtask.CommandTask
+authors: [ EnderDevTeam ]
+description: 在规定日期执行命令的插件
